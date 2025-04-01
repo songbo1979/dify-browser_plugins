@@ -1,0 +1,28 @@
+name: dify_mcp_plugin
+version: 0.1.0
+description:
+  zh: 一个用于 MCP 服务器连接的 Dify Agent 插件
+  en: A Dify Agent plugin for MCP server connection
+author: songbo
+author_email: songbo-email@126.com
+tool:
+  # 工具的入口函数，这里假设为 call_function
+  entrypoint: call_function
+  # 工具的调用方式，根据实际情况填写，这里假设为同步调用
+  call_mode: sync
+functions:
+  - name: call_function
+    parameters:
+      function_name:
+        type: string
+        description: 
+          zh: 要调用的函数名称（可以是 'mcp_call' 或普通函数）
+          en: The name of the function to call (either 'mcp_call' or a normal function)
+      parameters:
+        type: object
+        description: 
+          zh: 函数调用的参数
+          en: The parameters for the function call
+    description: 
+      zh: 调用一个函数，可以是 MCP 调用或普通函数调用
+      en: Call a function, either an MCP call or a normal function

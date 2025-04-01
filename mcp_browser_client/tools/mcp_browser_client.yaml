@@ -1,0 +1,30 @@
+identity:
+  name: mcp_browser_client
+  author: songbo
+  label:
+    en_US: mcp_browser_client
+    zh_Hans: mcp_browser_client
+    pt_BR: mcp_browser_client
+description:
+  human:
+    en_US: connect to mcp server,run browser
+    zh_Hans: connect to mcp server,run browser
+    pt_BR: connect to mcp server,run browser
+  llm: connect to mcp server,run browser
+parameters:
+  - name: query
+    type: string
+    required: true
+    label:
+      en_US: Query string
+      zh_Hans: 查询语句
+      pt_BR: Query string
+    human_description:
+      en_US: connect to mcp server,run browser
+      zh_Hans: connect to mcp server,run browser
+      pt_BR: connect to mcp server,run browser
+    llm_description: connect to mcp server,run browser
+    form: llm
+extra:
+  python:
+    source: tools/mcp_browser_client.py

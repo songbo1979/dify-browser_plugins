@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: dify_mcp_plugin
+Version: 0.1.0
+Summary: A Dify Agent plugin for MCP server connection
+Author: songbo
+Author-email: songbo-email@126.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: requests
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: requires-dist
+Dynamic: summary

@@ -1,0 +1,6 @@
+setup.py
+dify_mcp_plugin.egg-info/PKG-INFO
+dify_mcp_plugin.egg-info/SOURCES.txt
+dify_mcp_plugin.egg-info/dependency_links.txt
+dify_mcp_plugin.egg-info/requires.txt
+dify_mcp_plugin.egg-info/top_level.txt

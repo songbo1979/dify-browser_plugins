@@ -1,0 +1,23 @@
+{
+    "name": "dify_mcp_plugin",
+    "version": "0.1.0",
+    "description": "A Dify Agent plugin for MCP server connection",
+    "author": "Your Name",
+    "author_email": "your_email@example.com",
+    "functions": [
+        {
+            "name": "call_function",
+            "parameters": {
+                "function_name": {
+                    "type": "string",
+                    "description": "The name of the function to call (either 'mcp_call' or a normal function)"
+                },
+                "parameters": {
+                    "type": "object",
+                    "description": "The parameters for the function call"
+                }
+            },
+            "description": "Call a function, either an MCP call or a normal function"
+        }
+    ]
+}

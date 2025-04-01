@@ -1,0 +1,17 @@
+identity:
+  author: songbo
+  name: mcp_browser_client
+  label:
+    en_US: mcp_browser_client
+    zh_Hans: mcp_browser_client
+    pt_BR: mcp_browser_client
+  description:
+    en_US: connect to mcp server,run browser
+    zh_Hans: connect to mcp server,run browser
+    pt_BR: connect to mcp server,run browser
+  icon: icon.svg
+tools:
+  - tools/mcp_browser_client.yaml
+extra:
+  python:
+    source: provider/mcp_browser_client.py

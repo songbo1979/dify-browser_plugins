@@ -1,0 +1,50 @@
+version: 0.0.1
+type: plugin
+author: songbo
+name: mcp_browser_client
+label:
+  en_US: mcp_browser_client
+  ja_JP: mcp_browser_client
+  zh_Hans: mcp_browser_client
+  pt_BR: mcp_browser_client
+description:
+  en_US: connect to mcp server,run browser
+  ja_JP: connect to mcp server,run browser
+  zh_Hans: connect to mcp server,run browser
+  pt_BR: connect to mcp server,run browser
+icon: icon.svg
+resource:
+  memory: 268435456
+  permission:
+    tool:
+      enabled: true
+    model:
+      enabled: true
+      llm: true
+      text_embedding: false
+      rerank: false
+      tts: false
+      speech2text: false
+      moderation: false
+    endpoint:
+      enabled: true
+    app:
+      enabled: true
+    storage:
+      enabled: true
+      size: 1048576
+plugins:
+  tools:
+    - provider/mcp_browser_client.yaml
+meta:
+  version: 0.0.1
+  arch:
+    - amd64
+    - arm64
+  runner:
+    language: python
+    version: "3.12"
+    entrypoint: main
+created_at: 2025-04-01T15:12:56.9582232+08:00
+privacy: PRIVACY.md
+verified: false
